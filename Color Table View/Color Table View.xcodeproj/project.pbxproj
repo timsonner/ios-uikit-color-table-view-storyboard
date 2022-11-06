@@ -14,6 +14,7 @@
 		2B77461F29178346002DBA4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B77461D29178346002DBA4E /* LaunchScreen.storyboard */; };
 		2B7746272917848F002DBA4E /* ColorsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7746262917848F002DBA4E /* ColorsTableVC.swift */; };
 		2B77462B29178DEE002DBA4E /* ColorsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B77462A29178DEE002DBA4E /* ColorsDetailsVC.swift */; };
+		2B77462D2917B91E002DBA4E /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B77462C2917B91E002DBA4E /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2B77462029178346002DBA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B7746262917848F002DBA4E /* ColorsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableVC.swift; sourceTree = "<group>"; };
 		2B77462A29178DEE002DBA4E /* ColorsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailsVC.swift; sourceTree = "<group>"; };
+		2B77462C2917B91E002DBA4E /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				2B77461229178344002DBA4E /* AppDelegate.swift */,
 				2B77461429178344002DBA4E /* SceneDelegate.swift */,
 				2B77461829178344002DBA4E /* Main.storyboard */,
+				2B77462C2917B91E002DBA4E /* UIColor+Ext.swift */,
 				2B77462A29178DEE002DBA4E /* ColorsDetailsVC.swift */,
 				2B7746262917848F002DBA4E /* ColorsTableVC.swift */,
 				2B77461B29178346002DBA4E /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				2B77461329178344002DBA4E /* AppDelegate.swift in Sources */,
 				2B77462B29178DEE002DBA4E /* ColorsDetailsVC.swift in Sources */,
+				2B77462D2917B91E002DBA4E /* UIColor+Ext.swift in Sources */,
 				2B77461529178344002DBA4E /* SceneDelegate.swift in Sources */,
 				2B7746272917848F002DBA4E /* ColorsTableVC.swift in Sources */,
 			);
