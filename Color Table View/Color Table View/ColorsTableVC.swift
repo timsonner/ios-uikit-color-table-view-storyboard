@@ -9,9 +9,23 @@ import UIKit
 
 // MARK: UIViewController Code
 class ColorsTableVC: UIViewController {
+    
+    var colors: [UIColor] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        seedArrayWithColors()
+    }
+    
+    func seedArrayWithColors() {
+        for _ in 0..<50 {
+            colors.append(createRandomColor())
+        }
+    }
+    
+    func createRandomColor() -> UIColor {
+        let randomColor = UIColor(cgColor: CGColor(red: CGFloat.random(in: 0...1.0), green: CGFloat.random(in: 0...1.0), blue: CGFloat.random(in: 0...1.0), alpha: 1))
+        return randomColor
     }
 }
 
@@ -23,10 +37,9 @@ extension ColorsTableVC: UITableViewDelegate, UITableViewDataSource {
     }
     // Conform to UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        var content = cell.defaultContentConfiguration()
-        content.text = String(indexPath.row + 1)
-        cell.contentConfiguration = content
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell")!
+        let color = colors[indexPath.row]
+        cell.backgroundColor = color
         return cell
     }
     // Perform segue to ColorsDetailsVC
