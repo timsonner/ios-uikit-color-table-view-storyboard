@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		2B77461329178344002DBA4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B77461229178344002DBA4E /* AppDelegate.swift */; };
 		2B77461529178344002DBA4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B77461429178344002DBA4E /* SceneDelegate.swift */; };
-		2B77461729178344002DBA4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B77461629178344002DBA4E /* ViewController.swift */; };
 		2B77461A29178344002DBA4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B77461829178344002DBA4E /* Main.storyboard */; };
 		2B77461C29178346002DBA4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B77461B29178346002DBA4E /* Assets.xcassets */; };
 		2B77461F29178346002DBA4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B77461D29178346002DBA4E /* LaunchScreen.storyboard */; };
+		2B7746272917848F002DBA4E /* ColorsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7746262917848F002DBA4E /* ColorsTableVC.swift */; };
+		2B77462B29178DEE002DBA4E /* ColorsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B77462A29178DEE002DBA4E /* ColorsDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B77460F29178344002DBA4E /* Color Table View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Table View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B77461229178344002DBA4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B77461429178344002DBA4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2B77461629178344002DBA4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B77461929178344002DBA4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B77461B29178346002DBA4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B77461E29178346002DBA4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B77462029178346002DBA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B7746262917848F002DBA4E /* ColorsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableVC.swift; sourceTree = "<group>"; };
+		2B77462A29178DEE002DBA4E /* ColorsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				2B77461229178344002DBA4E /* AppDelegate.swift */,
 				2B77461429178344002DBA4E /* SceneDelegate.swift */,
-				2B77461629178344002DBA4E /* ViewController.swift */,
 				2B77461829178344002DBA4E /* Main.storyboard */,
+				2B77462A29178DEE002DBA4E /* ColorsDetailsVC.swift */,
+				2B7746262917848F002DBA4E /* ColorsTableVC.swift */,
 				2B77461B29178346002DBA4E /* Assets.xcassets */,
 				2B77461D29178346002DBA4E /* LaunchScreen.storyboard */,
 				2B77462029178346002DBA4E /* Info.plist */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B77461729178344002DBA4E /* ViewController.swift in Sources */,
 				2B77461329178344002DBA4E /* AppDelegate.swift in Sources */,
+				2B77462B29178DEE002DBA4E /* ColorsDetailsVC.swift in Sources */,
 				2B77461529178344002DBA4E /* SceneDelegate.swift in Sources */,
+				2B7746272917848F002DBA4E /* ColorsTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
