@@ -11,6 +11,14 @@ import UIKit
 class ColorsTableVC: UIViewController {
     
     var colors: [UIColor] = []
+    
+    enum Cells {
+        static let colorsCell = "ColorCell"
+    }
+    
+    enum Segues {
+        static let toColorsDetailsVC = "ToColorsDetailsVC"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +47,7 @@ extension ColorsTableVC: UITableViewDelegate, UITableViewDataSource {
     }
     // Conform to UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell") else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Cells.colorsCell) else {
             print("⚠️ UITableViewCell was nil.")
             return UITableViewCell()
         }
@@ -50,6 +58,6 @@ extension ColorsTableVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Send the color of the selected item to the ColorsDetailsVC
         let color = colors[indexPath.row]
-        performSegue(withIdentifier: "ToColorsDetailsVC", sender: color)
+        performSegue(withIdentifier: Segues.toColorsDetailsVC, sender: color)
     }
 }
