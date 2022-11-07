@@ -15,6 +15,7 @@ class ColorsDetailsVC: UIViewController {
         super.viewDidLoad()
         // Data was recieved from the segue.
         view.backgroundColor = color ?? .white
+        color?.getRGBValues(color: color!)
     }
     
 }
