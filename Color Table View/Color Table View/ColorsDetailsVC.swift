@@ -11,6 +11,13 @@ class ColorsDetailsVC: UIViewController {
     
     var color: UIColor?
 
+    @IBOutlet weak var redLabel: UILabel!
+    
+    @IBAction func redSlider(_ sender: UISlider) {
+        redLabel.text = String(sender.value)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Data was recieved from the segue.

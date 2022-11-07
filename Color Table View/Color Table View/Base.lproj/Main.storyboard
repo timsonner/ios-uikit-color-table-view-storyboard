@@ -60,14 +60,42 @@
                     <view key="view" contentMode="scaleToFill" id="8DD-i3-POc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2hi-qS-fYj">
+                                <rect key="frame" x="136" y="497" width="118" height="30"/>
+                                <connections>
+                                    <action selector="redSlider:" destination="s4P-jJ-xaD" eventType="valueChanged" id="Nf6-bN-zcb"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IR-v1-Akl">
+                                <rect key="frame" x="174" y="429" width="42" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Qdq-vV-e6t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Biv-rc-yva"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0IR-v1-Akl" firstAttribute="centerX" secondItem="2hi-qS-fYj" secondAttribute="centerX" id="EfR-Yf-rdF"/>
+                            <constraint firstItem="2hi-qS-fYj" firstAttribute="top" secondItem="0IR-v1-Akl" secondAttribute="bottom" constant="33" id="Tu1-gV-YiK"/>
+                            <constraint firstItem="0IR-v1-Akl" firstAttribute="top" secondItem="Biv-rc-yva" secondAttribute="top" constant="286" id="VpE-Vf-t5L"/>
+                            <constraint firstItem="2hi-qS-fYj" firstAttribute="leading" secondItem="Biv-rc-yva" secondAttribute="leading" constant="138" id="X5l-3J-J97"/>
+                            <constraint firstItem="Biv-rc-yva" firstAttribute="bottom" secondItem="2hi-qS-fYj" secondAttribute="bottom" constant="284" id="zLn-cC-5p6"/>
+                            <constraint firstItem="0IR-v1-Akl" firstAttribute="centerX" secondItem="8DD-i3-POc" secondAttribute="centerX" id="zh9-al-ACd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nis-zr-os1"/>
+                    <connections>
+                        <outlet property="redLabel" destination="0IR-v1-Akl" id="PTE-qV-znr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfk-ab-BGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4509" y="-146"/>
+            <point key="canvasLocation" x="4507.6923076923076" y="-146.44549763033174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CO3-7A-l6g">
