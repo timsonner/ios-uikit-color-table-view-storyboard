@@ -80,11 +80,11 @@
                         <viewLayoutGuide key="safeArea" id="Biv-rc-yva"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0IR-v1-Akl" firstAttribute="centerX" secondItem="2hi-qS-fYj" secondAttribute="centerX" id="EfR-Yf-rdF"/>
-                            <constraint firstItem="2hi-qS-fYj" firstAttribute="top" secondItem="0IR-v1-Akl" secondAttribute="bottom" constant="33" id="Tu1-gV-YiK"/>
+                            <constraint firstItem="2hi-qS-fYj" firstAttribute="centerX" secondItem="0IR-v1-Akl" secondAttribute="centerX" id="4re-Qb-vj9"/>
+                            <constraint firstItem="2hi-qS-fYj" firstAttribute="leading" secondItem="Biv-rc-yva" secondAttribute="leading" constant="138" id="JMP-Kn-inn"/>
+                            <constraint firstItem="Biv-rc-yva" firstAttribute="bottom" secondItem="2hi-qS-fYj" secondAttribute="bottom" constant="284" id="KbF-iF-XFZ"/>
+                            <constraint firstItem="2hi-qS-fYj" firstAttribute="top" secondItem="0IR-v1-Akl" secondAttribute="bottom" constant="33" id="S8G-2S-wzy"/>
                             <constraint firstItem="0IR-v1-Akl" firstAttribute="top" secondItem="Biv-rc-yva" secondAttribute="top" constant="286" id="VpE-Vf-t5L"/>
-                            <constraint firstItem="2hi-qS-fYj" firstAttribute="leading" secondItem="Biv-rc-yva" secondAttribute="leading" constant="138" id="X5l-3J-J97"/>
-                            <constraint firstItem="Biv-rc-yva" firstAttribute="bottom" secondItem="2hi-qS-fYj" secondAttribute="bottom" constant="284" id="zLn-cC-5p6"/>
                             <constraint firstItem="0IR-v1-Akl" firstAttribute="centerX" secondItem="8DD-i3-POc" secondAttribute="centerX" id="zh9-al-ACd"/>
                         </constraints>
                     </view>
