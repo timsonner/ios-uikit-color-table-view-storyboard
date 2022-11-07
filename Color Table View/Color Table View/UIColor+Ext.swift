@@ -47,6 +47,7 @@ extension UIColor {
         let hexStringColorValueInHex: String
         
     }
+    
     // Declare static, so all instances of UIColor have access to the randomColor
     // MARK: Generate Random Color
     static func random() -> UIColor {
@@ -62,7 +63,7 @@ extension UIColor {
     // MARK: Get RGB Values Of A Color
     func getRGBValues(color: UIColor) -> ColorAttributes {
         var floatRGBValues: CIColor {
-                return CIColor(color: self)
+            return CIColor(cgColor: color.cgColor)
             } // coreImageColor properties are Floats, ex: coreImageColor.red will be 0.687132880280259
         
         // Convert Floats to Ints
